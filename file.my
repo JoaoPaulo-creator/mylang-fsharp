@@ -1,0 +1,10 @@
+var lang = "Mylang";
+print(lang);
+
+{
+  var lang = "C++";
+  print(lang);
+}
+
+var lang = "Linguagem C";
+print(lang);
