@@ -150,6 +150,13 @@ type Interpreter() =
                 stmts |> List.iter execute
             finally
                 curr_env <- previous
+        | If (cond, thenBranch, elseBranch) ->
+           if isTruthy (eval (cond))  then
+               execute thenBranch
+           else
+               match elseBranch with
+               | Some elseBranch -> execute elseBranch
+               | None -> ()
 
     member x.Interpret(stmts: Stmt list) =
         try
