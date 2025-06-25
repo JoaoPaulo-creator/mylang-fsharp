@@ -1,4 +1,4 @@
-module AST
+module Token
 
 type TokenType =
     | LEFT_PAREN
@@ -69,3 +69,4 @@ type Stmt =
     | Print of Expr
     | Var of Token * Expr option
     | Block of Stmt list
+    | If of Expr * Stmt * Stmt option

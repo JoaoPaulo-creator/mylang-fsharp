@@ -1,4 +1,4 @@
 module RuntimeError
 
-open AST
+open Token
 exception RuntimeError of Token * string

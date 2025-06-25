@@ -7,7 +7,7 @@
         </PropertyGroup>
 
         <ItemGroup>
-                <Compile Include="src/AST.fs" />
+                <Compile Include="src/Token.fs" />
                 <Compile Include="src/RuntimeError.fs" />
                 <Compile Include="src/Scanner.fs" />
                 <Compile Include="src/Parser.fs" />
